@@ -1,0 +1,37 @@
+.contentCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  height: 200px;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  &__title {
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  &__footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+  }
+  &__button {
+    color: white;
+    background-color: #0026ff;
+    border: 0;
+    border-radius: 5px;
+    width: 92px;
+    height: 24px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .contentCard {
+    border-radius: 15px;
+    border: solid 1px black;
+  }
+}
