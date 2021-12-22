@@ -10,7 +10,8 @@ export const Timer = ({ id }) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const limit = dateNow + Math.floor(Math.random() * (80000 - 3000)) + 3000;
+    const limit =
+      dateNow + Math.floor(Math.random() * (150000 - 30000)) + 30000;
     dispatch(setTimeLimit({ id, limit }));
   }, []);
 

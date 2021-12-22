@@ -1,0 +1,74 @@
+.itemCard {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  background: white;
+  width: 350px;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  &__title {
+    // margin-top: 2.5rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+  &__img {
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+  }
+  &__category {
+    text-align: left;
+    margin-top: 2rem;
+    font-size: 1.7rem;
+  }
+  &__description {
+    padding-top: 0.5rem;
+    text-align: justify;
+    font-size: 2rem;
+  }
+  &__price {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+  }
+  &__other {
+    margin-top: 0.7rem;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  &__button_group {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__button_group .button {
+    font-size: 1.7rem;
+    color: white;
+    border-radius: 0.5rem;
+    border: 0;
+    padding: 0.5rem 1.5rem;
+    background-color: #0d6efd;
+  }
+}
+
+@media (min-width: 1024px) {
+  .itemCard {
+    border-radius: 1rem;
+    width: 750px;
+    border: solid 1px black;
+    &__title {
+      font-size: 2.5rem;
+    }
+    &__other {
+      font-size: 1.5rem;
+    }
+    &__button_grupo .button {
+      padding: 1rem 2rem;
+      font-size: 2rem;
+    }
+    .button:hover {
+      background-color: #3284ff;
+    }
+  }
+}

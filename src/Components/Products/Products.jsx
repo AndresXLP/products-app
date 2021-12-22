@@ -28,6 +28,7 @@ export const Products = () => {
             img={item.image}
             id={item.id}
             dateNow={dateNow}
+            rest={item}
           />
         ))}
       </div>
