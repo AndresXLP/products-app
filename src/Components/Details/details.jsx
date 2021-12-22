@@ -1,5 +1,4 @@
-import { useSelector } from 'react-redux';
-import { useLocation, useNavigate, useParams } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import './style.scss';
 export const Details = () => {
   const Navigate = useNavigate();
@@ -9,7 +8,7 @@ export const Details = () => {
     <div className="product">
       <div className="itemCard">
         <h1 className="itemCard__title">{item.title}</h1>
-        <img className="itemCard__img" src={item.image} />
+        <img className="itemCard__img" src={item.image} alt={item.title} />
         <p className="itemCard__category">
           <strong>Category:</strong> {item.category}
         </p>
@@ -24,7 +23,9 @@ export const Details = () => {
           <button className="button" onClick={() => Navigate(`/`)}>
             Go Home
           </button>
-          <button className="button">Go About</button>
+          <button className="button" onClick={() => Navigate(`/about`)}>
+            Go About
+          </button>
         </div>
       </div>
     </div>

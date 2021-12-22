@@ -1,0 +1,19 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 35px;
+  background-color: rgb(255, 255, 255);
+  font-size: 2rem;
+  &__link {
+    text-decoration: none;
+    color: #0d6efd;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    height: 50px;
+    font-size: 2.5rem;
+  }
+}

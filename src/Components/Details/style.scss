@@ -18,7 +18,7 @@
     width: 200px;
   }
   &__category {
-    text-align: left;
+    text-align: center;
     margin-top: 2rem;
     font-size: 1.7rem;
   }
@@ -30,7 +30,7 @@
   &__price {
     text-align: center;
     font-size: 2.5rem;
-    margin-top: 1rem;
+    margin-top: 0.75rem;
   }
   &__other {
     margin-top: 0.7rem;
@@ -43,6 +43,7 @@
     justify-content: space-around;
   }
   &__button_group .button {
+    transition: all 0.5s;
     font-size: 1.7rem;
     color: white;
     border-radius: 0.5rem;
@@ -60,15 +61,26 @@
     &__title {
       font-size: 2.5rem;
     }
-    &__other {
-      font-size: 1.5rem;
+    &__category {
+      text-align: center;
+      font-size: 2rem;
     }
-    &__button_grupo .button {
+    &__price {
+      font-size: 3rem;
+    }
+    &__other {
+      font-size: 1.7rem;
+    }
+    &__button_group {
+      margin-top: 0.75rem;
+    }
+    &__button_gruop .button {
       padding: 1rem 2rem;
       font-size: 2rem;
     }
     .button:hover {
-      background-color: #3284ff;
+      background-color: #86b7ff;
+      color: black;
     }
   }
 }
